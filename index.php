@@ -74,8 +74,8 @@
                         [
                             'homeTeam' => 'Bulls',
                             'guestTeam' => 'Sixers',
-                            'homeScore' => 154,
-                            'guestScore' => 141
+                            'homeScore' => 94,
+                            'guestScore' => 106
 
                         ],
                         [
@@ -83,13 +83,6 @@
                             'guestTeam' => 'Spurs',
                             'homeScore' => 110,
                             'guestScore' => 99
-
-                        ],
-                        [
-                            'homeTeam' => 'Wizards',
-                            'guestTeam' => 'Pacers',
-                            'homeScore' => 154,
-                            'guestScore' => 141
 
                         ],
                         [
