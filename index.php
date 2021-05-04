@@ -8,7 +8,6 @@
         .container {
             background-color: darkgoldenrod;
             color: white;
-            margin: 20px 0;
         }
 
         h2 {
@@ -36,78 +35,82 @@
 
                 <?php
 
-                $matches = [
+                    $matches = [
+                            [
+                               'homeTeam' => 'Pistons',
+                               'guestTeam' => 'Magic',
+                               'homeScore' => 112,
+                               'guestScore' => 119
+
+                            ],
                         [
-                           'homeTeam' => 'Pistons',
-                           'guestTeam' => 'Magic',
-                           'homeScore' => 112,
-                           'guestScore' => 119
+                            'homeTeam' => 'Pelicans',
+                            'guestTeam' => 'Warriors',
+                            'homeScore' => 108,
+                            'guestScore' => 123
 
                         ],
-                    [
-                        'homeTeam' => 'Pelicans',
-                        'guestTeam' => 'Warriors',
-                        'homeScore' => 108,
-                        'guestScore' => 123
+                        [
+                            'homeTeam' => 'Grizzlies',
+                            'guestTeam' => 'Knicks',
+                            'homeScore' => 104,
+                            'guestScore' => 118
 
-                    ],
-                    [
-                        'homeTeam' => 'Grizzlies',
-                        'guestTeam' => 'Knicks',
-                        'homeScore' => 104,
-                        'guestScore' => 118
+                        ],
+                        [
+                            'homeTeam' => 'Wizards',
+                            'guestTeam' => 'Pacers',
+                            'homeScore' => 154,
+                            'guestScore' => 141
 
-                    ],
-                    [
-                        'homeTeam' => 'Wizards',
-                        'guestTeam' => 'Pacers',
-                        'homeScore' => 154,
-                        'guestScore' => 141
+                        ],
+                        [
+                            'homeTeam' => 'Hawks',
+                            'guestTeam' => 'Trail Blazers',
+                            'homeScore' => 123,
+                            'guestScore' => 114
 
-                    ],
-                    [
-                        'homeTeam' => 'Hawks',
-                        'guestTeam' => 'Trail Blazers',
-                        'homeScore' => 123,
-                        'guestScore' => 114
+                        ],
+                        [
+                            'homeTeam' => 'Bulls',
+                            'guestTeam' => 'Sixers',
+                            'homeScore' => 154,
+                            'guestScore' => 141
 
-                    ],
-                    [
-                        'homeTeam' => 'Bulls',
-                        'guestTeam' => 'Sixers',
-                        'homeScore' => 154,
-                        'guestScore' => 141
+                        ],
+                        [
+                            'homeTeam' => 'Jazz',
+                            'guestTeam' => 'Spurs',
+                            'homeScore' => 110,
+                            'guestScore' => 99
 
-                    ],
-                    [
-                        'homeTeam' => 'Jazz',
-                        'guestTeam' => 'Spurs',
-                        'homeScore' => 110,
-                        'guestScore' => 99
+                        ],
+                        [
+                            'homeTeam' => 'Wizards',
+                            'guestTeam' => 'Pacers',
+                            'homeScore' => 154,
+                            'guestScore' => 141
 
-                    ],
-                    [
-                        'homeTeam' => 'Wizards',
-                        'guestTeam' => 'Pacers',
-                        'homeScore' => 154,
-                        'guestScore' => 141
+                        ],
+                        [
+                            'homeTeam' => 'Lakers',
+                            'guestTeam' => 'Nuggets',
+                            'homeScore' => 154,
+                            'guestScore' => 141
 
-                    ],
-                    [
-                        'homeTeam' => 'Lakers',
-                        'guestTeam' => 'Nuggets',
-                        'homeScore' => 154,
-                        'guestScore' => 141
-
-                    ],
-                ];
+                        ],
+                    ];
 
                 ?>
                 <h1>Final score:</h1>
                     <p>
                         <?php
                             for($i=0; $i<count($matches); $i++) {
-                                echo '<p>' . $matches[$i]['homeTeam'] . ' ' . '-' . ' ' . $matches[$i]['guestTeam'] . ' ' . '|' . ' ' . $matches[$i]['homeScore'] . '-' . $matches[$i]['guestScore'] . '</p>';
+                                echo '<p>' . $matches[$i]['homeTeam']
+                                    . ' ' . '-' . ' ' . $matches[$i]['guestTeam']
+                                    . ' ' . '|' . ' ' . $matches[$i]['homeScore']
+                                    . '-' . $matches[$i]['guestScore']
+                                    . '</p>';
                             }
                         ?>
                     </p>
