@@ -117,6 +117,14 @@
                 che mail contenga un punto e una chiocciola e che age sia un numero.
                 Se tutto è ok stampare "Accesso riuscito", altrimenti "Accesso negato"
                 -->
+
+                <?php
+
+                $name = $_GET['nome'];
+                $mail = $_GET['mail'];
+                $age = $_GET['eta'];
+
+                ?>
             </div>
         </div>
     </div>
