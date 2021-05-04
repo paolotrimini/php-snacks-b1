@@ -95,8 +95,8 @@
                         [
                             'homeTeam' => 'Lakers',
                             'guestTeam' => 'Nuggets',
-                            'homeScore' => 154,
-                            'guestScore' => 141
+                            'homeScore' => 93,
+                            'guestScore' => 89
 
                         ],
                     ];
