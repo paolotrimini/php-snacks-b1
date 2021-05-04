@@ -8,6 +8,11 @@
         .container {
             background-color: darkgoldenrod;
             color: white;
+            margin: 20px 0;
+        }
+
+        h2 {
+            color: lightgreen;
         }
 
     </style>
@@ -102,11 +107,7 @@
                     <p>
                         <?php
                             for($i=0; $i<count($matches); $i++) {
-                                echo '<p>' . $matches[$i]['homeTeam']
-                                    . ' ' . '-' . ' ' . $matches[$i]['guestTeam']
-                                    . ' ' . '|' . ' ' . $matches[$i]['homeScore']
-                                    . '-' . $matches[$i]['guestScore']
-                                    . '</p>';
+                                echo '<p>' . $matches[$i]['homeTeam'] . ' ' . '-' . ' ' . $matches[$i]['guestTeam'] . ' ' . '|' . ' ' . $matches[$i]['homeScore'] . '-' . $matches[$i]['guestScore'] . '</p>';
                             }
                         ?>
                     </p>
@@ -117,14 +118,26 @@
                 che mail contenga un punto e una chiocciola e che age sia un numero.
                 Se tutto è ok stampare "Accesso riuscito", altrimenti "Accesso negato"
                 -->
+                <h2>
+                    <?php
 
-                <?php
+                        $name = $_GET['nome'];
+                        $mail = $_GET['mail'];
+                        $age = $_GET['eta'];
 
-                $name = $_GET['nome'];
-                $mail = $_GET['mail'];
-                $age = $_GET['eta'];
+                        // Funzioni utilizzate: strlen - strpos - is_numeric
+                        if (strlen($name) > 3 && strpos($mail, '@') != false && strpos($mail, '.') != false && is_numeric($age)) {
+                            var_dump('Accesso riuscito');
+                        }else {
+                            var_dump('Accesso negato');
+                        };
 
-                ?>
+                        // http://localhost:8888/?nome=paolo&mail=paolo@gmail.com&eta=35
+                        // testare effettuando modifiche su: paolo - paolo@gmail.com - 35
+
+                    ?>
+
+                </h2>
             </div>
         </div>
     </div>
