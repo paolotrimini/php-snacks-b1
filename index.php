@@ -123,9 +123,9 @@
 
                         // Funzioni utilizzate: strlen - strpos - is_numeric
                         if (strlen($name) > 3 && strpos($mail, '@') != false && strpos($mail, '.') != false && is_numeric($age)) {
-                            var_dump('Accesso riuscito');
+                            echo 'Accesso riuscito';
                         }else {
-                            var_dump('Accesso negato');
+                            echo 'Accesso negato';
                         };
 
                         // http://localhost:8888/?nome=paolo&mail=paolo@gmail.com&eta=35
